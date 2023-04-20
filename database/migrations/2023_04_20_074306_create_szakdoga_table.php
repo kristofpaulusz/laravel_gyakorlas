@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('szakdoga', function (Blueprint $table) {
             $table->id();
+            $table->string('szakdoga_nev');
+            $table->string('githublink');
+            $table->string('oldallink');
+            $table->string('tagokneve');
             $table->timestamps();
         });
     }

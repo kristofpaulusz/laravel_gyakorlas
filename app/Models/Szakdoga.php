@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Szakdoga extends Model
 {
     protected $table = 'szakdoga';
-    //
+    protected $fillable = [
+        'szakdoga_nev',
+        'githublink',
+        'oldallink',
+        'tagokneve' 
+    ];
 }
